@@ -1,0 +1,27 @@
+sha256 F1412: a3ceb36128af8fd72bda92978292b24736299d4fce48b1c175c67beeec9c6901
+n = 1412  symmetric: True  zero diagonal: True  edges: 328038
+Google file: n = 616
+F[0:564] equals Google rows 0..563 block: True
+F[564:1128] equals the same block (G = H, identity labelling): True
+G degrees: [281]
+G: lambda values {140}  mu values (non-adjacent pairs) {0, 140}
+G564 (Google block) is isomorphic to Taylor(Paley(281)) by an explicit vertex map: True
+U-V edges: 284  max per U vertex: 1  max per V vertex: 1
+matching is u_j - v_j with the same index j on both sides: True
+each of the 284 last vertices w is a twin of one u_j in G and of v_j in H (same j), all j distinct: True
+twin index set equals matched index set: True
+M = G[S] = H[S] (induced, same labelling since G = H): n(M) = 284  edges 20022
+twin block Z is a subgraph of M: True;  M edges deleted in Z: 10360
+components of Z: [2, 140, 140, 2]
+independent groups of components in the split (1 = split is forced): 1
+|W1|, |W2| = 142 142
+Z == M[W1] u M[W2] exactly, no W1-W2 edges: True
+F equals my rebuild from (G, S, W1) by the Theorem 3 recipe, all entries: True
+w_j not adjacent to u_j or v_j: True
+omega(M[W1]) = 6  omega(M[W2]) = 6  omega(M) = 8  (k = 9: sufficient form needs <= k-3 = 6)
+full form: max over i and v not in W_i of the largest clique of M[W_i + v] through v = 7  (theorem needs no K_8, i.e. <= 7)
+S = N[a] cap N[b]  u  N[a'] cap N[b'] with a, b, a', b' = 0 1 281 282  sizes 142 142  disjoint: True  a'b' is an edge: True
+sides are {a,b} u C(a'b') and C(ab) u {a',b'}: True
+edges between {a,b} and C(a'b'): 0   between {a',b'} and C(ab): 0
+count: n(G) + n(H) + n(M) = 564 + 564 + 284 = 1412  -> R(9, 9+9-1) = R(9,17) >= 1413
+DONE

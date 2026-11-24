@@ -1,0 +1,13 @@
+file=G564.txt
+n=564 edges=79242 symmetric=yes zero_diag=yes mode=cliques T=9 threads=8
+number of cliques of size 1: 564
+number of cliques of size 2: 79242
+number of cliques of size 3: 3697960
+number of cliques of size 4: 63789810
+number of cliques of size 5: 421567440
+number of cliques of size 6: 1046522680
+number of cliques of size 7: 887510400
+number of cliques of size 8: 210783720
+number of cliques of size 9: 0
+wall=8.4s
+RESULT: clique of size 9 exists: no

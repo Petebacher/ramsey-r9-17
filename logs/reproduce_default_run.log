@@ -1,0 +1,118 @@
+R9_17_1413.txt: OK
+input_google_R9_11_617.txt: OK
+theorem3_R9_17_1413.txt: OK
+common_part_split_R9_17_1413.txt: OK
+taylor_map_G564.txt: OK
+build.py: OK
+verify_theorem3.py: OK
+check_enumerate.c: OK
+check_russian_doll.c: OK
+check_branch_bound_fable.c: OK
+reproduce.sh: OK
+README.md: OK
+CITATION.cff: OK
+LICENSE: OK
+publish.json: OK
+logs/branch_bound_fable_F1412_c9.log: OK
+logs/check_branch_bound_fable_R9_17_1413_clique9.log: OK
+logs/check_branch_bound_fable_R9_17_1413_control_clique8_expect_YES.log: OK
+logs/check_branch_bound_fable_R9_17_1413_control_indep16_expect_YES.log: OK
+logs/check_enumerate_G564_c9.log: OK
+logs/check_enumerate_G564_i9.log: OK
+logs/check_enumerate_R9_17_1413_clique9.log: OK
+logs/check_russian_doll_label_fix.diff: OK
+logs/check_russian_doll_R9_17_1413_clique9.log: OK
+logs/enumerate_F1412_c9.log: OK
+logs/enumerate_G564_c9.log: OK
+logs/enumerate_G564_i9.log: OK
+logs/fable_verify_c1.log: OK
+logs/rdoll_decompose_F1412_c9.log: OK
+logs/rdoll_main_F1412_clique9.log: OK
+logs/verify_theorem3_R9_17_1413.log: OK
+LICENSES/Apache-2.0.txt: OK
+== Rebuild
+G block = Taylor(Paley(281)) under the vertex map in taylor_map_G564.txt (all 564 x 564 entries)
+built 1412 vertices, common part m = 284
+rebuilt graph is byte-identical to R9_17_1413.txt
+== Hypotheses of Theorem 3 (about 1 minute)
+PASS  1. F is 1412 x 1412, symmetric, zero diagonal; n(F) = 564 + 564 + 284
+PASS  2a. G block = rows and columns 0..563 of the Google file
+PASS  2c. G block = Taylor graph of Paley(281) (built from scratch here) under the explicit vertex map in taylor_map_G564.txt (281 is prime and 1 mod 4)
+PASS  2d. H block = rows and columns 0..563 of the Google file
+PASS  3a. the G-H edges are exactly the 284 matching edges u_i -- v_i
+PASS  3b. each z_i has exactly the neighbours N_G(u_i) in G and N_H(v_i) in H (so it is not joined to u_i or v_i)
+PASS  4. G[U] = H[V] entry by entry under u_i -> v_i; M has 284 vertices and 20022 edges
+PASS  5. Z = M[W1] + M[W2] with no W1-W2 edge; |W1| = 142, |W2| = 142, both nonempty
+PASS  4b. common_part_split_R9_17_1413.txt (vertex, side) agrees with the pairs and split in the data file
+PASS  5b. clique number of M[W1] and M[W2]: 6 and 6 (the paper's simpler sufficient form needs at most k-3 = 6)
+PASS  6. for every v outside Wi, M[Wi + v] has no K_8: largest clique found 7 (W1) and 7 (W2), need at most 7
+      (clique number of M itself: 8; survey item 2.3.h would need at most 7)
+PASS  7. H is the same graph as G (identical block, G = H, t = s = 9); its (9,9) property is the C-program check of G
+      sha256 of F with each row written without spaces: a3ceb36128af8fd72bda92978292b24736299d4fce48b1c175c67beeec9c6901
+PASS  8. counting: n(G) + n(H) + n(M) = 564 + 564 + 284 = 1412 = n(F); s + t - 1 = 9 + 9 - 1 = 17
+NOT CHECKED HERE: G (= H) has no K_9 and no independent 9-set (see README, checks table)
+ALL HYPOTHESES VERIFIED. If G is a (9,9)-graph, Theorem 3 gives R(9,17) >= 1413.
+== G block (rows and columns 0..563, Mathon's graph): no K9 and no independent 9-set
+file=G564.txt
+n=564 edges=79242 symmetric=yes zero_diag=yes mode=cliques T=9 threads=32
+number of cliques of size 1: 564
+number of cliques of size 2: 79242
+number of cliques of size 3: 3697960
+number of cliques of size 4: 63789810
+number of cliques of size 5: 421567440
+number of cliques of size 6: 1046522680
+number of cliques of size 7: 887510400
+number of cliques of size 8: 210783720
+number of cliques of size 9: 0
+wall=4.3s
+RESULT: clique of size 9 exists: no
+file=G564.txt
+n=564 edges=79242 symmetric=yes zero_diag=yes mode=independent sets T=9 threads=32
+number of independent sets of size 1: 564
+number of independent sets of size 2: 79524
+number of independent sets of size 3: 3697960
+number of independent sets of size 4: 63789810
+number of independent sets of size 5: 421567440
+number of independent sets of size 6: 1046522680
+number of independent sets of size 7: 887510400
+number of independent sets of size 8: 210783720
+number of independent sets of size 9: 0
+wall=4.2s
+RESULT: independent set of size 9 exists: no
+== Clique side, method 1: Russian-doll search (the line 'clique number = N' is the exact clique number)
+n=1412 edges=328038 symmetric_and_zero_diag=yes
+MODE clique: searching for a clique of size T (complement independence)
+K4 count: skipped (n > 300)
+clique number = 8 (target 9)  nodes=15472846906  cpu=1301.3s
+clique of size 9 exists: no
+== Clique side, method 2: plain enumeration with no pruning, counts every size
+file=R9_17_1413.txt
+n=1412 edges=328038 symmetric=yes zero_diag=yes mode=cliques T=9 threads=32
+number of cliques of size 1: 1412
+number of cliques of size 2: 328038
+number of cliques of size 3: 21420284
+number of cliques of size 4: 493640140
+number of cliques of size 5: 4267061120
+number of cliques of size 6: 13668755520
+number of cliques of size 7: 14812369600
+number of cliques of size 8: 4461521120
+number of cliques of size 9: 0
+wall=121.1s
+RESULT: clique of size 9 exists: no
+== Clique side, method 3: branch and bound with colour classes
+file=R9_17_1413.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=clique T=9 threads=4
+root: 1284 branch vertices after peeling 8 colour classes
+nodes=812097401 wall=126.0s
+RESULT: clique of size 9 exists: no
+== Positive controls: a K8 exists, an independent 16-set exists
+file=R9_17_1413.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=clique T=8 threads=4
+root: 1300 branch vertices after peeling 7 colour classes
+nodes=6 wall=0.0s
+witness: 19 20 28 29 98 403 12 78  verified=yes
+RESULT: clique of size 8 exists: YES
+file=R9_17_1413.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=independent T=16 threads=4
+root: 1292 branch vertices after peeling 15 colour classes
+nodes=14 wall=0.0s
+witness: 100 124 231 526 578 599 602 575 572 391 626 541 849 832 4 347  verified=yes
+RESULT: independent set of size 16 exists: YES
+ALL CHECKS PASSED

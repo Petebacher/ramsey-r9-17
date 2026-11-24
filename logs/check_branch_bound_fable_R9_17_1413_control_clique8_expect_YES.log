@@ -1,0 +1,5 @@
+file=R9_17_1413.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=clique T=8 threads=4
+root: 1300 branch vertices after peeling 7 colour classes
+nodes=18 wall=0.0s
+witness: 22 23 31 32 101 406 15 81  verified=yes
+RESULT: clique of size 8 exists: YES

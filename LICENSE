@@ -1,0 +1,28 @@
+Code (build.py, verify_theorem3.py, check_russian_doll.c, check_enumerate.c, check_branch_bound_fable.c, reproduce.sh): MIT License
+
+Copyright (c) 2026 Peter J. Chrisbacher
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The graph R9_17_1413.txt, the files theorem3_R9_17_1413.txt, common_part_split_R9_17_1413.txt and taylor_map_G564.txt, and
+README.md: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ .
+Please credit Peter J. Chrisbacher and cite this repository.
+R9_17_1413.txt contains two copies of one part of Google's graph unchanged, as induced subgraphs: rows 0 to 563 of
+Google's file (two copies of that 564-vertex block). The edges between the two copies and the 284 new vertices are new.
+Google's own edges between that block and the rest of Google's file are not included.
+
+input_google_R9_11_617.txt: Copyright Google LLC, from https://github.com/google-research/google-research
+(ramsey_number_bounds/improved_bounds/R(9, 11) >= 617.txt, commit 0d94f8c), redistributed unchanged (renamed) with
+attribution. That repository licenses source files under the Apache License 2.0 (text in LICENSES/Apache-2.0.txt) and
+datasets under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).

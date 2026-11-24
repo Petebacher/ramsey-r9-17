@@ -1,0 +1,15 @@
+Tue Nov 24 02:19:11 PM UTC 2026
+file=F1412.txt
+n=1412 edges=328038 symmetric=yes zero_diag=yes mode=cliques T=9 threads=8
+number of cliques of size 1: 1412
+number of cliques of size 2: 328038
+number of cliques of size 3: 21420284
+number of cliques of size 4: 493640140
+number of cliques of size 5: 4267061120
+number of cliques of size 6: 13668755520
+number of cliques of size 7: 14812369600
+number of cliques of size 8: 4461521120
+number of cliques of size 9: 0
+wall=200.0s
+RESULT: clique of size 9 exists: no
+Tue Nov 24 02:22:31 PM UTC 2026

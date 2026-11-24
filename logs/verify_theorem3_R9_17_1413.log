@@ -1,0 +1,17 @@
+PASS  1. F is 1412 x 1412, symmetric, zero diagonal; n(F) = 564 + 564 + 284
+PASS  2a. G block = rows and columns 0..563 of the Google file
+PASS  2c. G block = Taylor graph of Paley(281) (built from scratch here) under the explicit vertex map in taylor_map_G564.txt (281 is prime and 1 mod 4)
+PASS  2d. H block = rows and columns 0..563 of the Google file
+PASS  3a. the G-H edges are exactly the 284 matching edges u_i -- v_i
+PASS  3b. each z_i has exactly the neighbours N_G(u_i) in G and N_H(v_i) in H (so it is not joined to u_i or v_i)
+PASS  4. G[U] = H[V] entry by entry under u_i -> v_i; M has 284 vertices and 20022 edges
+PASS  5. Z = M[W1] + M[W2] with no W1-W2 edge; |W1| = 142, |W2| = 142, both nonempty
+PASS  4b. common_part_split_R9_17_1413.txt (vertex, side) agrees with the pairs and split in the data file
+PASS  5b. clique number of M[W1] and M[W2]: 6 and 6 (the paper's simpler sufficient form needs at most k-3 = 6)
+PASS  6. for every v outside Wi, M[Wi + v] has no K_8: largest clique found 7 (W1) and 7 (W2), need at most 7
+      (clique number of M itself: 8; survey item 2.3.h would need at most 7)
+PASS  7. H is the same graph as G (identical block, G = H, t = s = 9); its (9,9) property is the C-program check of G
+      sha256 of F with each row written without spaces: a3ceb36128af8fd72bda92978292b24736299d4fce48b1c175c67beeec9c6901
+PASS  8. counting: n(G) + n(H) + n(M) = 564 + 564 + 284 = 1412 = n(F); s + t - 1 = 9 + 9 - 1 = 17
+NOT CHECKED HERE: G (= H) has no K_9 and no independent 9-set (see README, checks table)
+ALL HYPOTHESES VERIFIED. If G is a (9,9)-graph, Theorem 3 gives R(9,17) >= 1413.

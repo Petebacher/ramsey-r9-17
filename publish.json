@@ -1,0 +1,11 @@
+{
+  "repo": "ramsey-r9-17",
+  "title": "R(9,17) >= 1413: a 1412-vertex Ramsey graph",
+  "description": "<p>A graph on 1412 vertices with no K<sub>9</sub> and no independent set of size 17. It raises the lower bound for the Ramsey number R(9,17) from 1411 (Xu, Xie and Radziszowski, 2004, as listed in the survey Small Ramsey Numbers; the best public bound we could find as of 24 November 2026) to 1413.</p><p>It is built by Theorem 3 of Xu, Shao and Radziszowski (SIAM J. Discrete Math. 25 (2011)) from two copies of Mathon's 564-vertex (9,9)-graph, which is the Taylor graph of the Paley graph on 281 vertices, and a 284-vertex common part: the common neighbourhoods of an edge and of its antipodal edge, split into two sides of 142. The form of this common part was found by taking apart Google Research's R(7,13) &ge; 513 graph, which has the same form. The hypotheses are machine-checked and the absence of K<sub>9</sub> is checked by three independently written exact programs. The absence of an independent 17-set rests on the theorem; no direct search of the finished graph exists.</p>",
+  "version": "1.0",
+  "creators": [{"name": "Chrisbacher, Peter J."}],
+  "license": "cc-by-4.0",
+  "upload_type": "dataset",
+  "keywords": ["Ramsey numbers", "lower bounds", "R(9,17)", "graph construction", "gluing construction"],
+  "release_notes": "R(9,17) >= 1413 (1412-vertex graph), by Theorem 3 of Xu, Shao and Radziszowski (2011) with a 284-vertex common part (two antipodal edges in the Taylor graph of Paley(281)) and a 142 + 142 split.\nIncludes the input, the pairing and split file, the Taylor-graph vertex map, a standard-library rebuild, a hypothesis verifier, exact clique checkers and reproduce.sh."
+}

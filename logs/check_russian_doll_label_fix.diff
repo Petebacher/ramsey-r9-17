@@ -1,0 +1,16 @@
+55c55,57
+<   if(argv[3][0]=='c'){ for(int i=0;i<n;i++){bs t=adj[i];adj[i]=nadj[i];nadj[i]=t;} printf("MODE clique: searching for a clique of size T (complement independence)\n"); } else printf("MODE independent set of size T\n");
+---
+>   int cmode = (argv[3][0]=='c');
+>   const char *what = cmode ? "clique number" : "independence number";
+>   if(cmode){ for(int i=0;i<n;i++){bs t=adj[i];adj[i]=nadj[i];nadj[i]=t;} printf("MODE clique: searching for a clique of size T (complement independence)\n"); } else printf("MODE independent set of size T\n");
+66c68
+<   printf("K4 count: %ld\n",k4);
+---
+>   if(n<=300) printf("K4 count: %ld\n",k4); else printf("K4 count: skipped (n > 300)\n");
+80,81c82,83
+<   printf("independence number %s %d (target %d)  nodes=%lld  cpu=%.1fs\n", best>=T?">=":"=", best, T, nodes, (double)(clock()-t0)/CLOCKS_PER_SEC);
+<   printf("independent set of size %d exists: %s\n", T, best>=T?"YES":"no");
+---
+>   printf("%s %s %d (target %d)  nodes=%lld  cpu=%.1fs\n", what, best>=T?">=":"=", best, T, nodes, (double)(clock()-t0)/CLOCKS_PER_SEC);
+>   printf("%s of size %d exists: %s\n", cmode?"clique":"independent set", T, best>=T?"YES":"no");

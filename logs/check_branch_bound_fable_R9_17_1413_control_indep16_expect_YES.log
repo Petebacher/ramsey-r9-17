@@ -1,0 +1,5 @@
+file=R9_17_1413.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=independent T=16 threads=4
+root: 1292 branch vertices after peeling 15 colour classes
+nodes=36 wall=0.0s
+witness: 103 133 206 415 567 564 537 605 651 666 590 453 846 740 28 434  verified=yes
+RESULT: independent set of size 16 exists: YES

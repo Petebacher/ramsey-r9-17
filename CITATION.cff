@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this graph, please cite it as below."
+title: "R(9,17) >= 1413: a 1412-vertex Ramsey graph"
+version: "1.0"
+authors:
+  - family-names: Chrisbacher
+    given-names: Peter J.
+date-released: 2026-11-24
+license: CC-BY-4.0
+abstract: "A graph on 1412 vertices with no K9 and no independent set of size 17, improving the lower bound for the Ramsey number R(9,17) from 1411 (Xu, Xie and Radziszowski, J. Graph Theory 47 (2004), as listed in the survey Small Ramsey Numbers, DS1 revision 18; the best public bound we could find as of 24 November 2026) to 1413. Built by Theorem 3 of Xu, Shao and Radziszowski (SIAM J. Discrete Math. 25 (2011)) from two copies of Mathon's 564-vertex (9,9)-graph (the Taylor graph of the Paley graph on 281 vertices) and a 284-vertex common part made of the common neighbourhoods of two antipodal edges, with a valid split. The form of this common part was found by taking apart Google Research's R(7,13) >= 513 graph, which has the same form. The clique side is checked by three independently written exact programs; the independent-set side rests on the theorem."
+keywords: [Ramsey numbers, lower bounds, graph construction]

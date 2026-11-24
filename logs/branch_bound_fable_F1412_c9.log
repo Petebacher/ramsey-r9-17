@@ -1,0 +1,4 @@
+file=F1412.txt n=1412 edges=328038 symmetric=yes zero_diag=yes mode=clique T=9 threads=8
+root: 1284 branch vertices after peeling 8 colour classes
+nodes=812097401 wall=43.7s
+RESULT: clique of size 9 exists: no
