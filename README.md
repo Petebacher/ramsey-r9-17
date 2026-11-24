@@ -22,7 +22,7 @@ The graph uses **Theorem 3** of Xu Xiaodong, Shao Zehui and S. P. Radziszowski, 
 
 (The authors also note a simpler sufficient form: it is enough that neither M[W1] nor M[W2] contains a K_(k−2). Our split satisfies both forms.)
 
-The inputs are not new. G and H are both Mathon's 564-vertex (9,9)-graph (A. Mathon, 1987, giving R(9,9) ≥ 565), which is rows 0 to 563 of Google's 616-vertex R(9,11) file (the identity labelling; G and H are two copies of the same graph, which Theorem 3 allows). This graph is the Taylor graph of the Paley graph on 281 vertices: two copies of Paley(281) (281 is prime and 1 mod 4; vertices i and j are adjacent when i − j is a nonzero square mod 281), each with an extra vertex joined to all of its copy, and each vertex x joined to the vertices y' of the other copy for which y − x is a non-square. It is 281-regular; two adjacent vertices have exactly 140 common neighbours; every vertex has exactly one "antipode", the unique non-neighbour that shares no neighbour with it. We checked that the file's block equals this graph exactly under an explicit vertex map (`taylor_map_G564.txt`, checked by `build.py` and `verify_theorem3.py`).
+The inputs are not new. G and H are both Mathon's 564-vertex (9,9)-graph (R. Mathon, 1987, giving R(9,9) ≥ 565), which is rows 0 to 563 of Google's 616-vertex R(9,11) file (the identity labelling; G and H are two copies of the same graph, which Theorem 3 allows). This graph is the Taylor graph of the Paley graph on 281 vertices: two copies of Paley(281) (281 is prime and 1 mod 4; vertices i and j are adjacent when i − j is a nonzero square mod 281), each with an extra vertex joined to all of its copy, and each vertex x joined to the vertices y' of the other copy for which y − x is a non-square. It is 281-regular; two adjacent vertices have exactly 140 common neighbours; every vertex has exactly one "antipode", the unique non-neighbour that shares no neighbour with it. We checked that the file's block equals this graph exactly under an explicit vertex map (`taylor_map_G564.txt`, checked by `build.py` and `verify_theorem3.py`).
 
 **The new part is the common part M (284 vertices) and its split.** Take an edge ab = {0, 1} of G and its antipodal edge a'b' = {281, 282} (the antipodes of 0 and 1; it is an edge). Let C(xy) be the set of common neighbours of x and y. Then
 
@@ -133,4 +133,4 @@ This work was directed by Peter J. Chrisbacher. The search, construction and che
 
 ## How to cite
 
-See `CITATION.cff`, or cite the Zenodo record for this repository once it is published.
+See `CITATION.cff`, or cite the Zenodo record: doi:10.5281/zenodo.24510951 (version 1.0; the concept DOI 10.5281/zenodo.24510950 covers all versions).
